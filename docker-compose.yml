@@ -1,0 +1,12 @@
+version: '3'
+services:
+  dashing:
+    build: .
+    ports:
+      - "3030:3030"
+    restart: always
+    volumes:
+      - dashing_dashboard:/dashboard
+volumes:
+    dashing_dashboard:
+
